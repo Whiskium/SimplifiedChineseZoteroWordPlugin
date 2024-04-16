@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon>
+    <tabs>
+      <tab id="ZoteroTab" getLabel="ZoteroRibbon.ZoteroTabLabel" insertBeforeMso="TabAddIns" keytip="C">
+        <group id="ZoteroGroup" image="zoteroz16" label="Zotero">
+          <button id="InsertZoteroCitationButton" label="添加/编辑引用" size="large" image="addEditZoteroCitation" onAction="ZoteroRibbon.ZoteroRibbonAddEditCitation" supertip="插入一个新的引用或编辑当前位置的引用" keytip="C"/>
+          <button id="InsertZoteroBibliographyButton" label="添加/编辑参考文献" size="large" image="addEditZoteroBibliography" onAction="ZoteroRibbon.ZoteroRibbonAddEditBibliography" supertip="插入一个新的参考文献或编辑当前位置的现有参考文献" keytip="B"/>
+	    <separator id="ZoteroSeparator1"/>
+          <button id="InsertZoteroNoteButton" label="插入笔记" size="large" image="addZoteroNote" onAction="ZoteroRibbon.ZoteroRibbonAddNote" supertip="在当前位置插入一条新笔记" keytip="N"/>
+	    <separator id="ZoteroSeparator2"/>
+          <button id="ZoteroSetDocPrefs" label="文档偏好" image="setZoteroDocPrefs-small" onAction="ZoteroRibbon.ZoteroRibbonSetDocPrefs" supertip="更改引用样式" keytip="P"/>
+          <button id="RefreshZotero" label="刷新" imageMso="RecordsRefreshRecords" onAction="ZoteroRibbon.ZoteroRibbonRefresh" supertip="刷新所有引用" keytip="R"/>
+          <button id="ZoteroRemoveCodes" label="取消关联引用" imageMso="TableUnlinkExternalData" onAction="ZoteroRibbon.ZoteroRibbonRemoveCodes" supertip="移除所有 Zotero 代码并取消与 Zotero 文库的关联" keytip="U"/>
+          <!-- <button id="InsertZoteroCitationButtonSmall" visible="false" label="Add/Edit Citation" image="addEditZoteroCitation-small" onAction="ZoteroRibbon.ZoteroRibbonAddEditCitation" supertip="Insert a new citation, or edit the citation at the current cursor position"/>
+	    <button id="InsertZoteroBibliographyButtonSmall" visible="false" label="Add/Edit Bibliography" size="large" image="addEditZoteroBibliography-small" onAction="ZoteroRibbon.ZoteroRibbonAddEditBibliography" supertip="Insert a new bibliography, or edit the existing bibliography, at the current cursor position"/>
+          <button id="ZoteroSetDocPrefsLarge" visible="false" label="Document Preferences" size="large" image="setZoteroDocPrefs" onAction="ZoteroRibbon.ZoteroRibbonSetDocPrefs" supertip="Change the citation style or locale"/> -->
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
